@@ -20,6 +20,8 @@
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
+
+
 		<dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
@@ -82,8 +84,12 @@
 		    <artifactId>h2</artifactId>
 		    <scope>runtime</scope>
 		</dependency>
-        
-	</dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>

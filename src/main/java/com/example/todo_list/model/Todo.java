@@ -22,6 +22,10 @@ public class Todo {
 
 	    private Date targetDate;
 
+		private Date CreationDate;
+
+		private String link;
+
 	    public Todo() {
 	        super();
 	    }
@@ -31,6 +35,7 @@ public class Todo {
 	        this.setUserName(user);
 	        this.setDescription(desc);
 	        this.setTargetDate(targetDate);
+			this.setCreationtDate(new Date());
 	    }
 	    
 	    public long getId() {
@@ -64,5 +69,20 @@ public class Todo {
 		public void setTargetDate(Date targetDate) {
 			this.targetDate = targetDate;
 		}
-	
+
+		public void setCreationtDate(Date CreationDate) {
+		this.CreationDate = CreationDate;
+	}
+
+		public Date getCreationDate() {
+		return CreationDate;
+	}
+
+		public void setLink(String link) {
+			this.link = link;
+		}
+
+	public String getLink() {
+		return link;
+	}
 }
